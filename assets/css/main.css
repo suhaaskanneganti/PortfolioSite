@@ -272,6 +272,12 @@ input, select, textarea {
 		.skill-box:hover {
 			transform: translateY(-10px);
 		}
+		.item {
+			transition: transform 0.3s ease;
+		}
+		.item:hover {
+			transform: translateY(-10px);
+		}
 		
 
 /* Row */
