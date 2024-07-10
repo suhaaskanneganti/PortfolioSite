@@ -1795,8 +1795,9 @@ input, select, textarea {
 
 		.image.featured {
 			display: block;
-			width: 100%;
-			margin: 0 0 2em 0;
+			width: 35%;
+			height: auto; /* Maintain aspect ratio */
+			margin: 0 auto 2em auto; /* Center the image horizontally */
 		}
 
 		.image.left {
