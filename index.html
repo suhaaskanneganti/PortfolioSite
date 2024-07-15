@@ -182,21 +182,21 @@
 							<h2>Contact</h2>
 						</header>
 						<p>Interested in collaborating or learning more about my work? Reach out to me for any inquiries, opportunities, or just to start a conversation. I'm excited to hear from you!</p>
-						<form id="contact-form" method="post" action="/send">
-							<div class="row">
-								<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" required /></div>
-								<div class="col-6 col-12-mobile"><input type="email" name="email" placeholder="Email" required /></div>
-								<div class="col-12">
-									<textarea name="message" placeholder="Message" required></textarea>
-								</div>
-								<div class="col-12">
-									<input type="submit" value="Send Message" />
-								</div>
-							</div>
+						<form
+						action="https://formspree.io/f/xnnanbbq"
+						method="POST"
+						>
+						<label>
+						Your email:
+						<input type="email" name="email">
+						</label>
+						<label>
+						Your message:
+						<textarea name="message"></textarea>
+						</label>
+						
+						<button type="submit">Send</button>
 						</form>
-						<div id="form-response" style="display: none;">
-							<p>Submitted</p>
-						</div>
 					</div>
 				</section>
 

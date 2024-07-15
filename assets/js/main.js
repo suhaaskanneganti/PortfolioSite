@@ -114,24 +114,5 @@
             visibleClass: 'header-visible'
         });
 
-    // Contact Form Submission
-    $('#contact-form').on('submit', function(e) {
-        e.preventDefault();
-
-        var formData = $(this).serialize();
-
-        $.ajax({
-            type: 'POST',
-            url: $(this).attr('action'),
-            data: formData,
-            success: function(response) {
-                $('#form-response').show();
-                $('#contact-form')[0].reset();
-            },
-            error: function() {
-                alert('There was an error submitting the form. Please try again.');
-            }
-        });
-    });
 
 })(jQuery);
